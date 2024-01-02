@@ -1,0 +1,192 @@
+:root {
+	--side-nav-width: 231px;
+}
+
+body
+{
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #e4e4e4;
+	background-color: #090919;
+	scroll-behavior: smooth;
+}
+
+#warning {
+			background-color: #ffd900;
+			font-size: 24px;
+			text-align: center;
+			color: #112;
+		}
+
+.btnAccess {
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	color: #008cff;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		color: #f1f1f1;
+		background-color: #008cff;
+	}
+
+	&.fa-xmark {
+		color: #f1f1f1;
+		background-color: red;
+		&:hover {
+			color: red;
+			background-color: #f1f1f1;
+		}
+	}
+}
+
+#accessMenu {
+	display: none;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	
+		li {
+			padding: 0;
+			margin: 0;
+			
+			&.active {
+				background: #008cff;
+			}
+		}
+	}
+}
+
+#document
+{
+	display: flex;
+
+	main {
+		hyphens: auto;
+		min-height: 100vh;
+		margin-left: var(--side-nav-width);
+		padding: 0px 8px;
+	}
+}
+
+#contentsSlide {
+	position: absolute;
+	top: 270px;
+	left: 0;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 99;
+	background-color: #1f1f29;
+	color: #eeeeee;
+	width: var(--side-nav-width);
+	padding-left: 5px;
+	font-size: 15px;
+	
+	#contents {
+		padding: 0 0 0 10px;
+		a {
+			color: #f7f7f7;
+			font-size: 15.5px;
+			text-decoration: none;
+			&:hover {
+				color: #008cff;
+			}
+		}
+		.contentsHeading1 {
+			position: relative;
+			left: 1px;
+		}
+		.contentsHeading2 {
+			position: relative;
+			left: 10px;
+		}
+		.contentsHeading3 {
+			position: relative;
+			left: 19px;
+		}
+		.contentsHeading4 {
+			position: relative;
+			left: 28px;
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-family: "Baloo 2", "Baloo", sans-serif;
+	font-weight: 400;
+	margin: 10px 0 20px 0;
+	letter-spacing: 1px;
+}
+
+h1
+{
+	font-size: 45px;
+	font-weight: 900;
+}
+
+h2
+{
+	font-size: 39px;
+}
+
+h3
+{
+	font-family: cursive;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h4
+{
+	font-size: 26px;
+	font-weight: 600;
+}
+
+h5
+{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+h6
+{
+	font-size: 17px;
+	font-weight: 400;
+}
+
+p
+{
+	margin: 0 0 24px 0;
+}
+
+@media screen and (min-width: 1024px) {
+	@import "style.desktop.scss";	
+}
+
+@media screen and (max-width: 1023px) {
+	@import "style.tablet.scss";
+}
+
+@media screen and (max-width: 767px) {
+	@import "style.mobile.scss";
+}
+
+@media print {
+	@import "style.print.scss";
+}

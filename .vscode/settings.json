@@ -1,0 +1,16 @@
+{
+	"discord.lowerDetailsEditing": "Making Fruit Salads",
+	"peacock.color": "#df4c33",
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#e6735f",
+		"activityBar.background": "#e6735f",
+		"activityBar.foreground": "#15202b",
+		"activityBar.inactiveForeground": "#15202b99",
+		"commandCenter.border": "#e7e7e799",
+		"sash.hoverBorder": "#e6735f",
+		"titleBar.activeBackground": "#df4c33",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#df4c3399",
+		"titleBar.inactiveForeground": "#e7e7e799"
+	}
+}

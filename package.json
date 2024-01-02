@@ -1,0 +1,27 @@
+{
+  "name": "fruit-salads",
+  "version": "1.0.0",
+  "description": "An enormous collection of resources for multiple industries and topics including coding, filmmaking and more",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --port 7252",
+	"sass": "sass --watch scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Sprouse",
+  "keywords": [
+	"education"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "sass": "^1.69.6",
+    "vite": "^5.0.10",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1"
+  }
+}
